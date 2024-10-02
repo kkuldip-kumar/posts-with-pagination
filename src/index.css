@@ -1,0 +1,141 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  padding: 20px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0 5px;
+}
+
+li.active button {
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #efefef;
+  border: 1px solid #000;
+  color: #000;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.search_input {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: 1px solid #beb8b8;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  width: 50%;
+}
+
+.search_input:hover {
+  border: 1px solid #605d5d;
+}
+
+.pagination_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination_wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select_ww {
+  display: flex;
+  align-items: center;
+}
+
+.custom_select {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: 1px solid #beb8b8;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  width: 50%;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24'><path fill='gray' d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+.custom_select:hover {
+  border: 1px solid #605d5d;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+.top p {
+  text-transform: capitalize;
+}
+
+.bottom_b {
+  padding-top: 8px;
+}
+
+h2 {
+  font-size: 16px !important;
+  margin: 4px 0;
+  font-weight: 600;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns for large screens */
+  gap: 16px;
+  /* Adjust the gap between tiles */
+}
+
+@media (max-width: 1024px) {
+
+  /* Tablet screens */
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for tablet screens */
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* Mobile screens */
+  .post-grid {
+    grid-template-columns: 1fr;
+    /* 1 column for mobile screens */
+  }
+}
