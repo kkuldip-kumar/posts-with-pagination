@@ -16,24 +16,22 @@ Ensure you have the following installed on your machine:
 ### Installation
 
 1. **Clone the repository:**
-
    ```bash
    git clone https://github.com/kkuldip-kumar/posts-with-pagination.git
-
-
-
+   ```
 2. **Navigate to the project directory::**
   cd posts-with-pagination
 3. **Installation Dependencies:**
   ```bash
    pnpm install
+```
+
 
 ### Running the Project
 
 1. **Start the development server:**
   ```bash
    pnpm run dev
-
+```
 2. **Open the app:**
   http://localhost:5173
- 
